@@ -1,0 +1,86 @@
+/* Reset some default styles */
+body, h1, p, img {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 2rem;
+    text-align: center;
+}
+
+#crypto-data {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.crypto-tile {
+    border-bottom: 2px solid #333;
+}
+
+.crypto-tile-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.crypto-tile-header img {
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+}
+
+.crypto-tile-header span:last-child {
+    margin-left: auto;
+    font-size: .5em;
+}
+
+.crypto-tile-content {
+    display: none;
+    padding: 1rem 2rem;
+    background-color: #f0f0f0;
+}
+
+.crypto-tile-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.crypto-tile-content th, .crypto-tile-content td {
+    border: 2px solid #333;
+    padding: 8px;
+    text-align: left;
+}
+
+.crypto-tile-content th {
+    text-transform: uppercase;
+}
+
+/* Desktop view */
+@media screen and (min-width: 768px) {
+    #crypto-data {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .crypto-tile {
+        flex: 0 0 calc(33.333% - 20px);
+        border-bottom: none;
+    }
+}
+
+
