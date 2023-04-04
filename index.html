@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HBAR HQ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <title>Promptist</title>
 </head>
 <body>
-    <h1>HBAR HQ</h1>
-    <div id="crypto-data">
+    <div class="container">
+        <h1>Prompt a better prompt</h1>
+        <p>Enter your prompt below:</p>
+        <textarea id="userPrompt" placeholder="Type your prompt here"></textarea>
+        <button id="betterPromptBtn">Get Refined Prompt</button>
+        <div id="refinedPrompt" class="refined-prompt"></div>
     </div>
     <script src="scripts.js"></script>
 </body>
